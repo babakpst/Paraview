@@ -1,0 +1,37 @@
+<Xdmf xmlns:xi="http://www.w3.org/2003/XInclude" Version="2.2">
+  <Domain>
+    <Grid GridType="Collection" CollectionType="Spatial">
+
+      <Grid GridType="Uniform">
+        <Topology TopologyType="Hexahedron" Dimensions="196">
+          <DataItem Dimensions="196 8" NumberType="Int" Precision="4" Format="HDF">example.h5:part-0-connectivity</DataItem>
+        </Topology>
+        <Geometry GeometryType="XYZ">
+          <DataItem Dimensions="320 3" NumberType="Float" Precision="4" Format="HDF">example.h5:part-0-points</DataItem>
+        </Geometry>
+        <Attribute Name="scalar" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="320 1" NumberType="Float" Precision="4" Format="HDF">example.h5:part-0-scalars</DataItem>
+        </Attribute>
+        <Attribute Name="vectors" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="320 3" NumberType="Float" Precision="4" Format="HDF">example.h5:part-0-vectors</DataItem>
+        </Attribute>
+      </Grid>
+
+      <Grid GridType="Uniform">
+        <Topology TopologyType="Hexahedron" Dimensions="147">
+          <DataItem Dimensions="147 8" NumberType="Int" Precision="4" Format="HDF">example.h5:part-1-connectivity</DataItem>
+        </Topology>
+        <Geometry GeometryType="XYZ">
+          <DataItem Dimensions="256 3" NumberType="Float" Precision="4" Format="HDF">example.h5:part-1-points</DataItem>
+        </Geometry>
+        <Attribute Name="scalar" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="256 1" NumberType="Float" Precision="4" Format="HDF">example.h5:part-1-scalars</DataItem>
+        </Attribute>
+        <Attribute Name="vectors" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="256 3" NumberType="Float" Precision="4" Format="HDF">example.h5:part-1-vectors</DataItem>
+        </Attribute>
+      </Grid>
+
+    </Grid>
+  </Domain>
+</Xdmf>
